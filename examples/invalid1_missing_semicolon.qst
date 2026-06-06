@@ -1,0 +1,5 @@
+player hero: Player {
+    level = 5
+    gold = 20;
+    hasKey = false;
+}

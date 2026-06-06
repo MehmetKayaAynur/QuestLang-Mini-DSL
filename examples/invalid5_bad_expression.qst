@@ -1,0 +1,5 @@
+quest BadExpression {
+    if hero.level >= {
+        log("bad");
+    }
+}

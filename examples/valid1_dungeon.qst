@@ -1,0 +1,18 @@
+player hero: Player {
+    level = 5;
+    gold = 20;
+    hasKey = false;
+}
+
+func canEnterDungeon(p: Player): bool {
+    return p.level >= 5 && p.hasKey == true;
+}
+
+quest DungeonEntry {
+    if canEnterDungeon(hero) {
+        reward gold 100;
+        log("Dungeon quest completed");
+    } else {
+        log("Player cannot enter dungeon");
+    }
+}

@@ -1,0 +1,16 @@
+player hero: Player {
+    level = 10;
+    gold = 50;
+    hasKey = true;
+}
+
+func isVeteran(p: Player): bool {
+    return p.level >= 10;
+}
+
+quest VeteranBonus {
+    if isVeteran(hero) {
+        reward gold 200;
+        log("Veteran bonus granted");
+    }
+}

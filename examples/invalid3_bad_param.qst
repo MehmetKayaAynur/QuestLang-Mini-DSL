@@ -1,0 +1,3 @@
+func canEnterDungeon(p Player): bool {
+    return p.level >= 5;
+}

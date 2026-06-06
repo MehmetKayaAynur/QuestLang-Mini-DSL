@@ -1,0 +1,3 @@
+quest BadQuest {
+    reward 100 gold;
+}
